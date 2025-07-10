@@ -16,7 +16,7 @@ import * as ImagePicker from "expo-image-picker";
 
 export default function NewScreen() {
   const router = useRouter();
-  const { addPlant } = usePlantStore();
+  const addPlant = usePlantStore((store) => store.addPlant);
   const [name, setName] = useState<string>();
   const [days, setDays] = useState<string>();
   const [imageUri, setImageUri] = useState<string>();

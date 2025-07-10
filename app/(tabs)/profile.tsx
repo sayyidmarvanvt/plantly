@@ -4,7 +4,7 @@ import { useUserStore } from "@/store/userStore";
 import { PlantlyButton } from "@/components/PlantlyButton";
 
 export default function ProfileScreen() {
-  const { toggleHasOnboarded } = useUserStore();
+  const toggleHasOnboarded = useUserStore((store) => store.toggleHasOnboarded);
   return (
     <View style={styles.container}>
       <PlantlyButton title="Back to onboarding" onPress={toggleHasOnboarded} />

@@ -9,7 +9,7 @@ import { PlantlyImage } from "@/components/PlantlyImage";
 
 export default function OnboardingScreen() {
   const router = useRouter();
-  const { toggleHasOnboarded } = useUserStore();
+  const toggleHasOnboarded = useUserStore((store) => store.toggleHasOnboarded);
   const handlePress = () => {
     toggleHasOnboarded();
     router.replace("/");
