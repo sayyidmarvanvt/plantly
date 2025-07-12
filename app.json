@@ -19,7 +19,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "transparent"
       },
       "edgeToEdgeEnabled": true,
       "package": "com.sayyidmarvan.plantly"
@@ -43,7 +43,7 @@
           "androidIcons": {
             "leaf": {
               "foregroundImage": "./assets/leaf.png",
-              "backgroundColor": "#ffffff"
+              "backgroundColor": "transparent"
             }
           }
         }
